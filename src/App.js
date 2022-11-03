@@ -10,7 +10,6 @@ function App() {
   const [workMinutes, setWorkMinutes] = useState(45);
   const [breakMinutes, setBreakMinutes] = useState(15);
 
-
   return (
     <main>
       <SettingContext.Provider value={{
@@ -22,10 +21,7 @@ function App() {
         setBreakMinutes
       }}>
         {showSettings ? <Settings /> : <Timer />}
-
       </SettingContext.Provider>
-      
-      
     </main>
   );
 }
